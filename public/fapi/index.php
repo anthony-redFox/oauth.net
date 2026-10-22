@@ -16,9 +16,9 @@ require('../../includes/_header.php');
 
     <p>The core FAPI functionality is split into two documents, with a third that describes the attacker model</p>
     <ul>
-      <li><a href="https://openid.net/specs/fapi-security-profile-2_0-final.html">FAPI 2.0 Security Profile</a> (Final)</li>
-      <li><a href="https://openid.net/specs/fapi-attacker-model-2_0-final.html">FAPI 2.0 Attacker Model</a> (Final)</li>
-      <li><a href="https://openid.bitbucket.io/fapi/fapi-2_0-message-signing.html">FAPI 2.0 Message Signing</a> (Draft)</li>
+      <li><a href="https://openid.net/specs/fapi-security-profile-2_0.html">FAPI 2.0 Security Profile</a></li>
+      <li><a href="https://openid.net/specs/fapi-attacker-model-2_0.html">FAPI 2.0 Attacker Model</a></li>
+      <li><a href="https://openid.net/specs/fapi-message-signing-2_0.html">FAPI 2.0 Message Signing</a></li>
     </ul>
 
     <p>Specifications Referenced by FAPI</p>
