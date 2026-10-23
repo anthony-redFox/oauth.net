@@ -95,6 +95,7 @@ require('../../includes/_header.php');
     <p>The specs below are in draft status and are still active working group items. They will likely change before they are finalized as RFCs or BCPs.</p>
     <ul>
       <li><a href="/cross-app-access/">Cross-App Access (XAA)</a></li>
+      <li><a href="/workload-authorization-grant/">Workload Authorization Grant (WAG)</a> (individual draft)</li>
       <li><a href="/2/client-id-metadata-document/">Client ID Metadata Document</a></li>
       <li><a href="/specs/">All OAuth Working Group Documents</a></li>
     </ul>
