@@ -12,8 +12,8 @@ require('../../includes/_header.php');
 
     <p><a href="https://datatracker.ietf.org/doc/draft-carleton-workload-authz-grant/" class="rfc">datatracker.ietf.org/doc/draft-carleton-workload-authz-grant</a></p>
 
-    <p>The Workload Authorization Grant (WAG) is a profile of the <a href="https://datatracker.ietf.org/doc/html/rfc7523">JWT Authorization Grant</a> that lets a workload hosted on a platform, such as an AI agent, get access tokens from a third party's authorization server. The platform signs a short-lived JWT naming one agent, and the agent presents it at the token endpoint of an authorization server that has been configured once to trust that platform. Each agent gets its own identity and audit trail, without an administrator registering every agent as an OAuth client and without agents sharing one credential.</p>
-    <p>WAG defines no new grant type, token format, or registry entries. It covers workloads acting on their own behalf. Acting on behalf of a user is out of scope, though the grant is designed to compose with delegation. WAG is an individual draft and an early exploration, not yet an OAuth Working Group item.</p>
+    <p>The Workload Authorization Grant (WAG) is a profile of the <a href="https://datatracker.ietf.org/doc/html/rfc7523">JWT Authorization Grant</a> that lets a workload, such as an AI agent, hosted on a platform get access tokens from a third party's authorization server. The platform signs a short-lived JWT naming one agent, and the agent presents it at the token endpoint of an authorization server that has been configured once to trust that platform. Each agent gets its own identity and audit trail, without an administrator registering each agent as an OAuth client and without agents sharing credentials.</p>
+    <p>WAG defines no new grant type or token format, instead building on RFC 7523. It covers workloads acting on their own behalf. WAG is an individual draft and an early exploration, not yet an OAuth Working Group item.</p>
 
     <img src="wag-flow-diagram.svg" style="width: 100%" alt="Workload Authorization Grant flow: the Platform is registered once at the Authorization Server, the Platform issues a WAG to the Agent, the Agent exchanges it for an access token, and calls the Resource Server">
 
@@ -51,9 +51,9 @@ require('../../includes/_header.php');
 
     <div class="grid">
       <div class="column">
-        <b>Libraries</b>
+        <b>Testing Tools</b>
         <ul>
-          <li><a href="https://github.com/jralmaraz/wimse-identity-fabric">WIMSE Identity Fabric</a> - Platform issuer, Platform Registration, and an in-memory Authorization Server (Go)</li>
+          <li><a href="https://identity-provider.net/">identity-provider.net</a> - A sample Identity Provider that issues WAGs</li>
         </ul>
       </div>
     </div>
